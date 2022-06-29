@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/icons/Menu BookOS.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <title>BookOS</title>
+</head>
+
+<body>
+  <!-- Just for loading -->
+  <img src="./assets/mode nuit.jpg" alt="wall" style="width:1px; height:1px; position: fixed; top: 0; right:0;" />
+  <img src="./assets/mode jour.jpg" alt="wall" style="width:1px; height:1px; position: fixed; bottom: 0; left:0;" />
+  <!-- Just for loading -->
+  <section id="splash">
+    <div class="splash-logo">
+      <i class="fab fa-laptop"></i>
+    </div>
+    <div class="loading-container">
+      <div class="loading-bar">
+        <div class="loading-indicator"></div>
+      </div>
+    </div>
+  </section>
+  <section id="auth">
+    <div class="auth-container">
+      <div class="profile">
+        <img src="./assets/profiles booklifes.png" alt="Profile Image" />
+      </div>
+      <h1>Bienvenue à BookOS</h1>
+      <form class="le mot de passe">
+        <input placeholder="Entrer le mot de passe" id="le mot de passe" type="le mot de passe" autocomplete="à l'arrêt" />
+        <div>
+          <i class="far fa-arrow-alt-circle-right"></i>
+        </div>
+      </form>
+      <p class="password-clue">Votre mot de passe est <span>123</span></p>
+      <p class="touch-id">Touchez ID ou entrez le mot de passe</p>
+    </div>
+    <div class="cancel">
+      <div>
+        <i class="far fa-times-circle"></i>
+      </div>
+      <div>Annuler</div>
+    </div>
+  </section>
+  <section id="windows">
+    <div id="backstore" style="display: none">
+      <div id="dbOS">
+        <div class="DBMS">
+          <div>
+            <img src="./assets/images/dbosweb.png" alt="dbms" />
+            <h1 class="title">BookOS</h1>
+            <h3>Un système exploitation web de BookOS piloté par les données</h3>
+            <p>Il s'agit d'un projet de SGBD de phase 1. Toujours en développement et sera étendu à la phase d'utilisation des bases de données.
+              Ceci est purement fait avec du plan html, css et js. Pas de cadre, pas de groupement et pas de dépendance :)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="backstore" style="display: none">
+      <div id="database">
+        <div class="DBMS">
+          <div>
+            <img src="./assets/images/base de donnée booklifes.jpeg" alt="BKMS" />
+            <h1 class="title">BKMS</h1>
+            <h3>Système de gestion de base de données</h3>
+          </div>
+          <p>
+            Un système de gestion de base de données (SGBD) est le logiciel qui interagit
+            avec les utilisateurs finaux, les applications et la base de données elle-même pour capturer
+            et analyser les données. Le logiciel SGBD comprend en outre
+            les installations de base fournies pour administrer la base de données. La somme
+            total de la base de données, du SGBD et des applications associées
+            peut être qualifié de système de base de données. Souvent le terme "base de données"
+            est également utilisé vaguement pour désigner l'un des SGBD, la base de données
+            système ou une application associée à la base de données.
+          </p>
+          <h2>Histoire</h2>
+          <p>
+            La taille, les capacités et les performances des bases de données et leur
+            les SGBD respectifs ont augmenté en ordres de grandeur. Ces
+            les augmentations de performances ont été rendues possibles par les progrès technologiques
+            les domaines des processeurs, de la mémoire informatique, du stockage informatique et
+            réseaux informatiques. Le concept de base de données a été rendu possible par
+            l'émergence de supports de stockage à accès direct tels que les
+            les disques, qui sont devenus largement disponibles au milieu des années 1960 ; plus tôt
+            les systèmes reposaient sur le stockage séquentiel des données sur bande magnétique. La
+            le développement ultérieur de la technologie des bases de données peut être divisé en
+            trois époques basées sur le modèle ou la structure des données : navigation,[8]
+            SQL/relationnel et post-relationnel.
+          </p>
+          <h2>Navigation BKMS</h2>
+          <p>
+            <img src="assets/images/Navigation Web.jpg" alt="" class="profile-pic float-right" />
+            L'introduction de la base de données terminologique a coïncidé avec la
+            disponibilité de stockage à accès direct (disques et tambours) depuis le
+            milieu des années 1960. Le SGBD de navigation a été proposé par
+            <strong>booklifes</strong>. En 2022, le groupe de travail sur les bases de données
+            livré leur norme, qui est généralement connue sous le nom de
+            approche CODASYL, et bientôt un certain nombre de produits commerciaux basés sur
+            sur cette approche est entré sur le marché. L'approche CODASYL a offert
+            applications la possibilité de naviguer dans un ensemble de données liées
+            qui s'est formé en un vaste réseau. Les applications pourraient trouver
+            enregistre par l'une des trois méthodes suivantes :
+          </p>
+          <ol type="1">
+            <li>
+              Utilisation d'une clé primaire (appelée clé CALC, généralement implémentée
+              par hachage)
+            </li>
+            <li>
+              Naviguer dans les relations (appelées ensembles) d'un enregistrement à
+              une autre
+            </li>
+            <li>Numérisation de tous les enregistrements dans un ordre séquentiel</li>
+          </ol>
+          <h2>relationnel BKMS</h2>
+          <p>
+            <img src="assets/images/Relation Web.jpeg" alt="Relation" class="profile-pic float-left" />
+            Edgar F. Codd a travaillé chez IBM à San Jose, en Californie, dans l'un des
+            leurs bureaux annexes qui étaient principalement impliqués dans le
+            développement de systèmes de disques durs. Il était mécontent de la
+            modèle de navigation de l'approche CODASYL, notamment l'absence d'un
+            fonction "recherche". En 1970, il a écrit un certain nombre d'articles qui
+            décrit une nouvelle approche de la construction de bases de données
+            a abouti au révolutionnaire A Relational Model of Data for
+            Grandes banques de données partagées.
+          </p>
+          <p>
+            Dans cet article, il décrit un nouveau système de stockage et de travail
+            avec de grandes bases de données. Au lieu que les enregistrements soient stockés dans une sorte
+            de liste chaînée d'enregistrements de forme libre comme dans CODASYL, l'idée de Codd était
+            d'organiser les données en plusieurs "tables", chaque table étant
+            utilisé pour un autre type d'entité. Chaque tableau contiendrait un
+            nombre fixe de colonnes contenant les attributs de l'entité.
+            Une ou plusieurs colonnes de chaque table ont été désignées comme clé primaire
+            par lequel les lignes du tableau pourraient être identifiées de manière unique ;
+            les renvois entre tables utilisaient toujours ces clés primaires,
+            plutôt que des adresses de disque, et les requêtes joindraient des tables basées sur
+            ces relations clés, à l'aide d'un ensemble d'opérations basées sur les
+            système mathématique de calcul relationnel (dont le modèle
+            prend son nom). Fractionner les données en un ensemble de données normalisées
+            tables (ou relations) visant à s'assurer que chaque "fait" n'était
+            stockées une seule fois, simplifiant ainsi les opérations de mise à jour. Tables virtuelles
+            vues appelées pourraient présenter les données de différentes manières pour
+            différents utilisateurs, mais les vues ne pouvaient pas être mises à jour directement.
+          </p>
+          <h2>SQL BKMS</h2>
+          <p>
+            IBM a commencé à travailler sur un système prototype vaguement basé sur celui de Codd
+            concepts comme System R au début des années 1970. La première version était
+            prêt en 1974/5, et les travaux ont alors commencé sur des systèmes multi-tables en
+            où les données pourraient être fractionnées de sorte que toutes les données d'un enregistrement
+            (dont certaines sont facultatives) n'avaient pas à être stockées dans un seul
+            grand "morceau". Les versions multi-utilisateurs suivantes ont été testées par
+            clients en 1978 et 1979, date à laquelle une requête standardisée
+            le langage SQL a été ajouté. Les idées de Codd établissaient
+            eux-mêmes à la fois réalisables et supérieurs à CODASYL, poussant IBM
+            développer une véritable version de production de System R, connue sous le nom de SQL/DS,
+            et, plus tard, Base de données 2
+          </p>
+          <h2>NoSQL et NewSQL</h2>
+          <p>
+            Les bases de données XML sont un type de base de données structurée orientée document
+            qui permet d'effectuer des requêtes basées sur des attributs de document XML. XML
+            les bases de données sont principalement utilisées dans des applications où les données sont
+            commodément considéré comme une collection de documents, avec une structure
+            qui peut varier du très souple au très rigide : exemples
+            inclure des articles scientifiques, des brevets, des déclarations de revenus et du personnel
+            enregistrements.
+          </p>
+          <p>
+            Les bases de données NoSQL sont souvent très rapides, ne nécessitent pas de table fixe
+            schémas, éviter les opérations de jointure en stockant des données dénormalisées, et
+            sont conçus pour être mis à l'échelle horizontalement.
+          </p>
+          <p>
+            NewSQL est une classe de bases de données relationnelles modernes qui vise à
+            fournir les mêmes performances évolutives que les systèmes NoSQL pour les applications en ligne
+            charges de travail de traitement des transactions (lecture-écriture) tout en utilisant
+            SQL et maintien des garanties ACID d'une base de données traditionnelle
+            système.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="Bookstore" style="display: none">
+      <div id="sql">
+        <div class="BKMS">
+          <div>
+            <img src="./assets/images/SQL Databases BookOS.jpg" alt="dbms" />
+            <h1 class="title">SQL</h1>
+            <h3>Langage de requêtes structurées</h3>
+          </div>
+          <p>
+            SQL est un langage spécifique à un domaine utilisé en programmation et conçu
+            pour gérer des données contenues dans un système de gestion de base de données relationnelle
+            (RDBMS), ou pour le traitement de flux dans un flux de données relationnel
+            système de gestion (RDSMS). Il est particulièrement utile dans la manipulation
+            des données structurées, c'est-à-dire des données incorporant des relations entre entités
+            et variables. SQL offre deux avantages principaux par rapport aux anciens
+            API en lecture-écriture telles que ISAM ou VSAM. Tout d'abord, il a introduit le
+            concept d'accès à de nombreux enregistrements avec une seule commande.
+            Deuxièmement, cela élimine le besoin de spécifier comment accéder à un enregistrement,
+            par exemple. avec ou sans index.
+          </p>
+          <h2>Histoires</h2>
+          <p>
+            <img src="assets/images/" alt="Donald D.Chamberlin pic" class="profile-pic float-right" />
+            SQL a été initialement développé chez IBM par Donald D. Chamberlin et
+            Raymond F. Boyce après avoir découvert le modèle relationnel de
+            Edgar F. Codd au début des années 1970. Cette version, initialement appelée
+            SEQUEL (Structured English Query Language), a été conçu pour
+            manipuler et récupérer des données stockées dans l'original d'IBM
+            système de gestion de bases de données quasi-relationnelles, System R, qui
+            groupe d'IBM San Jose Research Laboratory s'était développé au cours de la
+            années 1970. Après avoir testé SQL sur les sites de test des clients pour déterminer le
+            l'utilité et la praticité du système, IBM a commencé à développer
+            produits commerciaux basés sur leur prototype System R, y compris
+            System/38, SQL/DS et DB2, qui étaient disponibles dans le commerce en
+            1979, 1981 et 1983, respectivement.
+          </p>
+          <p>
+            À la fin des années 1970, Relational Software, Inc. (aujourd'hui Oracle
+            Corporation) a vu le potentiel des concepts décrits par Codd,
+            Chamberlin et Boyce, et ont développé leur propre SGBDR basé sur SQL
+            avec des aspirations de le vendre à l'US Navy, Central
+            Intelligence Agency et d'autres agences gouvernementales américaines. En juin
+            1979, Relational Software lance l'un des premiers
+            implémentations disponibles de SQL, Oracle V2 (Version2) pour VAX
+            des ordinateurs
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="Bookstore" style="display: none">
+      <div id="">
+        <div class="flex-container-data">
+          <div class="flex-container-data-1">
+            <ul>
+              <a href="#">
+                <li class="active-link">
+                  <i class="fas fa-user"></i>
+                  <span>À propos de</span>
+                </li>
+              </a>
+                </li>
+              </a>
+                </li>
+              </a>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="flex-container-data-2">
+            <img src="assets/images/" alt="" class="profile-pic" />
+            <h2></h2>
+            <p>
+
+            </p>
+            <p>
+
+            </p>
+            <p>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="backstore" style="display: none">
+      <div id="Praveen">
+        <div class="flex-container-data">
+          <div class="flex-container-data-1">
+            <ul>
+              <a href="#">
+                <li class="active-link">
+                  <i class="fas fa-user"></i>
+                  <span></span>
+                </li>
+              </a>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="flex-container-data-2">
+            <img src="assets/images/" alt="" class="profile-pic" />
+            <h2>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="backstore" style="display: none">
+      <div id="Ravindar">
+        <div class="flex-container-data">
+          <div class="flex-container-data-1">
+            <ul>
+              <a href="#">
+                <li class="active-link">
+                  <i class="fas fa-user"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="flex-container-data-2">
+            <img src="assets/images/" alt="" class="profile-pic" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="backstore" style="display: none">
+      <div id="Vineeth">
+        <div class="flex-container-data">
+          <div class="flex-container-data-1">
+            <ul>
+              <a href="#">
+                <li class="active-link">
+                  <i class="fas fa-user"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="flex-container-data-2">
+            <img src="assets/images/" alt="" class="profile-pic" />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="backstore" style="display: none">
+      <div id="Nagasai">
+        <div class="flex-container-data">
+          <div class="flex-container-data-1">
+            <ul>
+              <a href="#">
+                <li class="active-link">
+                  <i class="fas fa-user"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="backstore" style="display: none">
+      <div id="help">
+        <div class="DBMS">
+          <div>
+            <img src="./assets/images/BookOS.jpg" alt="dbms" />
+            <h1 class="title">Help</h1>
+            <h3>S'il vous plaît contactez Booklifes.inc France pour les developpeurs</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main>
+    <!-- <div class="notch"></div> -->
+    <audio id="audio" autoplay="true" src="./assets/startup-sound.mp3"></audio>
+    <div id="menu">
+      <nav>
+        <div class="content">
+          <div class="logo menu-icons menu-icon-1">
+            <a href="" class="logo-link dont-ref"> <i class="fab fa-laptop"></i></a>
+            <div class="menu-drop">
+              <div class="drop-link" data-open="about" data-db="0">
+                <a href="" class="dont-ref">À propos de BookOS</a>
+              </div>
+              <div class="drop-div"></div>
+              <div class="drop-link">
+                <a href="" class="dont-ref">Préférences de système...</a>
+              </div>
+              <div class="drop-link"><a href="" class="dont-ref">BookStore...</a></div>
+              <div class="drop-div"></div>
+              <div class="drop-link"><a href="" class="dont-ref">Articles récents</a></div>
+              <div class="drop-div"></div>
+              <div class="drop-link"><a href="" class="dont-ref">Forcer à quitter</a></div>
+              <div class="drop-div"></div>
+              <div class="drop-link"><a href="" class="dont-ref">Dormir</a></div>
+              <div class="drop-link"><a href="" class="dont-ref">Redémarrer...</a></div>
+              <div class="drop-link"><a href="" class="dont-ref">Fermer...</a></div>
+              <div class="drop-div"></div>
+              <div class="drop-link"><a href="" class="dont-ref">Écran verrouillé</a></div>
+              <div class="drop-link"><a href="" class="dont-ref">Déconnecter l'utilisateur...</a></div>
+            </div>
+          </div>
+          <ul class="links">
+            <li class="menu-icons menu-icon-2">
+              <a href="" class="dont-ref">Base de données</a>
+              <div class="menu-drop">
+                <div class="drop-link" data-open="about" data-icon="0">
+                  <a href="" class="dont-ref">À propos de la base de données</a>
+                </div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="" class="dont-ref">Ouvert</a></div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="" class="dont-ref">Masquer la base de donnéese</a></div>
+                <div class="drop-link"><a href="" class="dont-ref">Masquer les autres</a></div>
+                <div><a href="" class="not-active">Afficher tout</a></div>
+              </div>
+            </li>
+            <li class="menu-icons menu-icon-3">
+              <a href="" class="dont-ref">SQL</a>
+              <div class="menu-drop">
+                <div class="drop-link"><a href="" class="dont-ref">Nouveau fichier SQL</a></div>
+                <div class="drop-link" data-open="about" data-icon="1">
+                  <a href="" class="dont-ref">Ouvert</a>
+                </div>
+                <div><a href="" class="not-active">Fermer la fenêtre</a></div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="" class="dont-ref">Obtenir des informations</a></div>
+                <div><a href="" class="not-active">Renommer</a></div>
+                <div class="drop-div"></div>
+                <div><a href="" class="not-active">Compresse</a></div>
+                <div class="drop-div"></div>
+                <div><a href="" class="not-active">Dupliquer</a></div>
+                <div><a href="" class="not-active">Créer un pseudonyme</a></div>
+                <div><a href="" class="not-active">Coup d'oeil</a></div>
+                <div><a href="" class="not-active">Afficher l'original</a></div>
+                <div><a href="" class="not-active">Ajouter à la barre latérale</a></div>
+                <div class="drop-div"></div>
+                <div><a href="" class="not-active">Mettre à la corbeille</a></div>
+                <div><a href="" class="not-active">Éjecter</a></div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="" class="dont-ref">Trouver</a></div>
+                <div class="drop-div"></div>
+                <div><a href="" class="not-active">Mots clés..</a></div>
+              </div>
+            </li>
+            <li class="menu-icons menu-icon-4">
+              <a href="" class="dont-ref">BookOS</a>
+              <div class="menu-drop">
+                <div class="drop-link" data-open="about" data-icon="2">
+                  <a href="" class="dont-ref">Ouvrir BookOS</a><div><a href="" class="not-active">Masquer BookOS</a></div>
+                  <div class="drop-link"><a href="" class="dont-ref">Masquer les autres</a></div>
+                  <div><a href="" class="not-active">Afficher tout</a></div>
+                </div>
+            </li>
+            <li class="menu-icons menu-icon-5">
+              <a href="" class="dont-ref"></a>
+              <div class="menu-drop">
+                <div class="drop-link" data-open="about" data-icon="3">
+                  <a href="" class="dont-ref">Open </a>              
+                </div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="https://github.com/praveen-prav" target="_blank"></a></div>
+                <div><a href="" class="not-active">Masquer</a></div>
+                <div class="drop-link"><a href="" class="dont-ref">Masquer les autres</a></div>
+                <div><a href="" class="not-active">Afficher tout</a></div>
+              </div>
+            </li>
+            <li class="menu-icons menu-icon-6">
+              <a href="" class="dont-ref"></a>
+              <div class="menu-drop">
+                <div class="drop-link" data-open="about" data-icon="4">
+                  <a href="" class="dont-ref">Open </a>
+                </div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="https://github.com/Ravindar832" target="_blank"></a></div>
+                </div>
+                <div class="drop-div"></div>
+                <div class="drop-div"></div>
+                <div><a href="" class="not-active">Masquer</a></div>
+                <div class="drop-link"><a href="" class="dont-ref">Masquer les autres</a></div>
+                <div><a href="" class="not-active">Afficher Tout</a></div>
+              </div>
+            </li>
+            <li class="menu-icons menu-icon-7">
+              <a href="" class="dont-ref"></a>
+              <div class="menu-drop">
+                <div class="drop-link" data-open="about" data-icon="5">
+                  <a href="" class="dont-ref">Open </a>
+                </div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="https://github.com/VineethChabala" target="_blank"></a></div>
+                <div class="drop-div"></div>
+                <div><a href="" class="not-active">Masquer</a></div>
+                <div class="drop-link"><a href="" class="dont-ref">Masquer les autres</a></div>
+                <div><a href="" class="not-active">Afficher Tout</a></div>
+              </div>
+            </li>
+            <li class="menu-icons menu-icon-8">
+              <a href="" class="dont-ref"></a>
+              <div class="menu-drop">
+                <div class="drop-link" data-open="about" data-icon="6">
+                  <a href="" class="dont-ref">Open </a>
+                </div>
+                <div class="drop-div"></div>
+                <div class="drop-link"><a href="https://github.com/NSVEGUR" target="_blank"></a></div>
+                <div class="drop-div"></div>
+                <div><a href="" class="not-active">Masquer</a></div>
+                <div class="drop-link"><a href="" class="dont-ref">Masquer les autres</a></div>
+                <div><a href="" class="not-active">Afficher Tout</a></div>
+              </div>
+            </li>
+            <li class="menu-icons menu-icon-9">
+              <a href="" class="dont-ref">Aides</a>
+              <div class="menu-drop">
+                <div><a href="" class="not-active">Donnez votre avis</a></div>
+                <div class="drop-div"></div>
+                <div class="drop-link" data-open="about" data-db="1">
+                  <a href="" class="dont-ref">Aide BookOS</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="focus">
+          <i class="fas fa-moon"></i>
+        </div>
+        <div id="action-button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 351 348">
+            <path stroke="black"
+              d="M87.75 46.2c9.31 0 18.237 3.245 24.819 9.021 6.583 5.776 10.281 13.61 10.281 21.779s-3.698 16.003-10.281 21.779c-6.582 5.776-15.51 9.021-24.819 9.021-9.31 0-18.237-3.245-24.82-9.021C56.349 93.003 52.65 85.169 52.65 77s3.698-16.003 10.28-21.779c6.583-5.776 15.51-9.021 24.82-9.021zM263.25 0c23.273 0 45.592 8.112 62.049 22.553C341.755 36.993 351 56.578 351 77c0 20.422-9.245 40.007-25.701 54.447C308.842 145.888 286.523 154 263.25 154H87.75c-23.273 0-45.592-8.112-62.049-22.553C9.245 117.007 0 97.422 0 77c0-20.422 9.245-40.007 25.701-54.447C42.158 8.113 64.477 0 87.75 0h175.5zM87.75 30.8c-13.964 0-27.355 4.867-37.23 13.532C40.648 52.996 35.1 64.747 35.1 77s5.547 24.004 15.42 32.668c9.875 8.665 23.266 13.532 37.23 13.532h175.5c13.964 0 27.355-4.867 37.229-13.532C310.353 101.004 315.9 89.253 315.9 77s-5.547-24.004-15.421-32.668C290.605 35.667 277.214 30.8 263.25 30.8H87.75zM263.25 194H87.75c-23.273 0-45.592 8.112-62.049 22.553C9.245 230.993 0 250.578 0 271c0 20.422 9.245 40.007 25.701 54.447C42.158 339.888 64.477 348 87.75 348h175.5c23.273 0 45.592-8.112 62.049-22.553C341.755 311.007 351 291.422 351 271c0-20.422-9.245-40.007-25.701-54.447C308.842 202.112 286.523 194 263.25 194v0zm0 123.2c-13.964 0-27.355-4.867-37.229-13.532-9.874-8.664-15.421-20.415-15.421-32.668s5.547-24.004 15.421-32.668c9.874-8.665 23.265-13.532 37.229-13.532 13.964 0 27.355 4.867 37.229 13.532 9.874 8.664 15.421 20.415 15.421 32.668s-5.547 24.004-15.421 32.668c-9.874 8.665-23.265 13.532-37.229 13.532z" />
+          </svg>
+          <div class="action-drop">
+            <div class="action-theme">
+              <div class="action-mode">
+                <div class="mode-glyph">
+                  <i class="fas fa-adjust"></i>
+                </div>
+                <div>mode nuit</div>
+              </div>
+              <div class="action-focus">
+                <div class="focus-glyph">
+                  <i class="fas fa-moon"></i>
+                </div>
+                <div>Focus</div>
+              </div>
+            </div>
+            <div class="action-color">
+              <h3>System Color</h3>
+              <div class="action-colors">
+                <div class="orange-div color-div">
+                  <div class="orange color">
+                    <div>
+                      <i class="fas fa-check"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="green-div color-div">
+                  <div class="green color">
+                    <div>
+                      <i class="fas fa-check"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="light-blue-div color-div">
+                  <div class="light-blue color">
+                    <div>
+                      <i class="fas fa-check"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="blue-div color-div">
+                  <div class="blue color">
+                    <div>
+                      <i class="fas fa-check"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="violet-div color-div">
+                  <div class="violet color">
+                    <div>
+                      <i class="fas fa-check"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="purple-div color-div">
+                  <div class="purple color">
+                    <div>
+                      <i class="fas fa-check"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="red-div color-div">
+                  <div class="red color">
+                    <div>
+                      <i class="fas fa-check"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="action-notch">
+              <div class="notch-glyph">
+                <i class="fas fa-laptop"></i>
+              </div>
+              <div>
+                Notch
+              </div>
+            </div> -->
+            <div class="action-sound">
+              <div class="sound-glyph">
+                <i class="fas fa-volume-up"></i>
+              </div>
+              <div>
+                <input type="range" id="sound" class="slider" />
+              </div>
+            </div>
+            <div class="action-wallpaper">
+              <div class="action-wall"></div>
+              <div>
+                <!-- <h3>Perfect</h3>
+                <h4>Ed Sheeran &#247; (Divide)</h4> -->
+                <h3>RadheShyam</h3>
+                <h4>Soul Of Radheshyam</h4>
+              </div>
+              <div class="perfect">
+                <div class="perfect-play">
+                  <i class="fas fa-play"></i>
+                </div>
+                <div class="perfect-pause">
+                  <i class="fas fa-pause"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span id="time"> </span>
+      </nav>
+    </div>
+    <div id="contextMenu" class="contextMenu">
+      <div class="context-link"><a href="">Nouvelle base de données</a></div>
+      <div class="drop-div"></div>
+      <div class="context-link"><a href="">Obtenir des informations</a></div>
+      <div class="context-link"><a href="">Changement de fond</a></div>
+      <div class="drop-div"></div>
+      <div class="stack context-link">
+        <i class="fas fa-check left-glyph"></i><a href="">Utiliser des piles</a>
+      </div>
+      <div class="stack context-link">
+        <i class="fas fa-angle-right right-glyph"></i><a href="">Regrouper les piles par</a>
+      </div>
+      <div class="context-link"><a href="">Afficher les options d'affichage</a></div>
+    </div>
+    <div id="dock">
+      <div class="dock-container">
+        <button class="icon">
+          <div class="icon-1">
+            <span>Menu BookOS</span>
+            <img class="app-icon" data-icon="0" src="./assets/icons/Menu BookOS.png" />
+          </div>
+          <div class="icon-2">
+            <span>Sql</span>
+            <img class="app-icon" data-icon="1" src="./assets/icons/tableplus.png" />
+          </div>
+          <span class="dock-line"></span>
+          <div class="icon-8">
+            <span>VSCode</span>
+            <img class="app-icon" data-icon="7" src="./assets/icons/vscode.png" />
+          </div>
+          <div class="icon-9">
+            <span>Source</span>
+            <img class="app-icon" data-icon="8" src="./assets/icons/github.png" />
+          </div>
+        </button>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="./scripts/app.js"></script>
+</body>
+
+</html>
